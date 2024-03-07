@@ -64,4 +64,3 @@ t<-4.24
 n<-812 
 ######determining the effect size based on the t statistic. 
 t_to_d(t, df_error = n-2, paired = FALSE)
-
