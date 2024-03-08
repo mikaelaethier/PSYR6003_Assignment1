@@ -53,10 +53,11 @@ pwr.t.test(n = NULL, d = .2, sig.level = 0.05, power = .8,
            alternative = c("two.sided"))
 #9. Conducting an equivalence test 
 ##Determining the power to detect a zero effect: alpha = 0.05, n=394 per group as determined by the previous power analysis, equivalence bounds of Cohen's d = -0.2 and Cohen's d = 0.2, assuming true effect = 0
+### Was unsure whether I should be using the sample size from the previous question or the total sample size collected due to question wording 
 powerTOSTtwo(N=394, alpha=0.05, low_eqbound_d=-0.2, high_eqbound_d=0.2)
 
 ###Determining the effect size and confidence interval if the t-test statistic is 4.25 
-####Using the total sample size excluding incomplete cases of 812
+####Using the total sample size excluding incomplete cases of 812, was unsure due to question wording as to whether it would be this sample or the sample achieved from the previous questions
 #####loading the effectsize library to conduct the t_to_d function 
 library(effectsize)
 #####creating new objects for the t statistic and the total sample size 
